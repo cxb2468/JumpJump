@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="830cfc48-7ec4-43ac-ac22-3e7fa17a006f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/image/bird1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/bird2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/cactus01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/cactus02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/cactus03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/obstacle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GamePanl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KLong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KLong.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BackgroundImage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BackgroundImage.java">
+      <file leaf-file-name="obstacle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obstacle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="-318">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,8 +41,8 @@
       <file leaf-file-name="KLong.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/KLong.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="-818">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1417#1418#0" expanded="true" />
@@ -59,40 +56,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="obstacle.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/obstacle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1731#1732#0" expanded="true" />
-                <element signature="e#1768#1769#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="long1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/long1.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="long2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/long2.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="long3.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/long3.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="over.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/over.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,9 +65,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/map1.png">
+      <file leaf-file-name="BackgroundImage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BackgroundImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cactus03.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/cactus03.png">
           <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="bird2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/bird2.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="bird1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image/bird1.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="GamePanl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GamePanl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1980">
+              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#507#517#0" expanded="true" />
+                <element signature="e#2622#2623#0" expanded="true" />
+                <element signature="e#2651#2652#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -135,8 +144,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/BackgroundImage.java" />
-        <option value="$PROJECT_DIR$/src/KLong.java" />
         <option value="$PROJECT_DIR$/src/obstacle.java" />
+        <option value="$PROJECT_DIR$/src/KLong.java" />
+        <option value="$PROJECT_DIR$/src/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/GamePanl.java" />
       </list>
     </option>
   </component>
@@ -181,11 +192,6 @@
             <path>
               <item name="JumpJump" type="b2602c69:ProjectViewProjectNode" />
               <item name="JumpJump" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JumpJump" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JumpJump" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -205,6 +211,9 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\jude\JumpJump\image" />
     </key>
@@ -275,7 +284,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585815243447</updated>
       <workItem from="1585815245988" duration="2882000" />
-      <workItem from="1585877650777" duration="3555000" />
+      <workItem from="1585877650777" duration="6971000" />
     </task>
     <task id="LOCAL-00001" summary="//add BGD  背景图片类">
       <created>1585816951942</created>
@@ -305,15 +314,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585893195466</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="//0403 14:14 obstale类更新完毕">
+      <created>1585894473105</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585894473105</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6437000" />
+    <option name="totallyTimeSpent" value="9853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="727" y="0" width="1198" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -330,6 +345,7 @@
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25483304" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32921347" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -341,7 +357,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +370,8 @@
     <MESSAGE value="//add BGD  背景图片类1-2" />
     <MESSAGE value="//class over  下班啦 回家继续码" />
     <MESSAGE value="//0403 恐龙类 更新完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value="//0403 恐龙类 更新完毕" />
+    <MESSAGE value="//0403 14:14 obstale类更新完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="//0403 14:14 obstale类更新完毕" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -411,9 +427,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/image/map2.png" />
-    <entry file="file://$PROJECT_DIR$/image/long1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/image/long3.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -423,12 +436,46 @@
     <entry file="file://$PROJECT_DIR$/image/over.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/image/long1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/cactus01.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/cactus02.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/cactus03.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/bird2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/bird1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BackgroundImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="900">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KLong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-818">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#1541#1542#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1656#1657#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -447,30 +494,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KLong.java">
+    <entry file="file://$PROJECT_DIR$/src/obstacle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="-318">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1417#1418#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1541#1542#0" expanded="true" />
-            <element signature="e#1570#1571#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/obstacle.java">
+    <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GamePanl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1768#1769#0" expanded="true" />
+            <element signature="e#507#517#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="e#2651#2652#0" expanded="true" />
           </folding>
         </state>
       </provider>
