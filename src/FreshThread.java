@@ -14,6 +14,7 @@ public class FreshThread extends Thread {
 
     }
 
+    @Override
     public void run(){
         while(!gp.isFinish()){
             gp.repaint();//重新绘制图片
@@ -27,7 +28,7 @@ public class FreshThread extends Thread {
         while (!( c instanceof MainFrame)){
             c.getParent();
         }
-        MainFrame f = (MainFrame) c;
+        MainFrame f = (MainFrame)c;
         JOptionPane.showMessageDialog(f,"       GAME OVER");
 
         f.restart();

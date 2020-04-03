@@ -40,7 +40,7 @@ public class KLong {
     public void move(){
         step();//踏步
         if(jumpState){
-            System.out.println("y:"+y);
+
         if ( y >= LOWEST_Y){   // y若大于等于200，则
             jumpValue = -4;
         }
@@ -48,7 +48,7 @@ public class KLong {
             jumpValue = 4;
         }
         y = y + jumpValue;
-        System.out.println("y2:"+y);
+
         image = image3;
         if (y >= LOWEST_Y){
             jumpState = false;
@@ -60,8 +60,7 @@ public class KLong {
     //踏步
 public void step() {
         int tmp = stepTime / 100 % 2;
-        //System.out.println("s:"+stepTime);
-       //System.out.println("t:"+tmp);
+
         if (tmp == 1){
             image = image1;
         }else {

@@ -40,6 +40,9 @@ public class GamePanl  extends JPanel implements KeyListener {
         background = new BackgroundImage();
 
         list.add(new obstacle());
+        System.out.println("list大小"+list.size());
+
+
         FreshThread t = new FreshThread(this);//刷新线程
         t.start();
 
@@ -52,29 +55,31 @@ public class GamePanl  extends JPanel implements KeyListener {
         g2.drawImage(background.image,0,0,this);
         g2.drawImage(background.image_yun,background.x_yun,background.y_yun,this);
         g2.drawImage(klong.image,klong.x,klong.y,this);
-
+        // System.out.println("addObstacleTimer :"+ addObstacleTimer);
         if (addObstacleTimer >= 1400 ){
+        //    System.out.println("addObstacleTimer 2:"+ addObstacleTimer);
             list.add(new obstacle());
             addObstacleTimer = 0;
         }
        // System.out.println(list);
-       // System.out.println("list大小："+ list.size());
+        System.out.println("list最后大小："+ list.size());
         for (int i =0;i < list.size();i++){
             obstacle o = list.get(i);
+
             o.move();
-            o.birdMove();
+            o.bridMove();
             g2.drawImage(o.image,o.x,o.y,this);//绘制障碍s
 
             //判断障碍物是否和 头 、脚相撞
-         /*   if (o.bounds().intersects(klong.bounds1()) || o.bounds().intersects(klong.bounds2())){
+          if (o.bounds().intersects(klong.bounds1()) || o.bounds().intersects(klong.bounds2())){
 
                 gameOver();
-            }  */
+            }
 
 
         }
         //分数++
-        if (addObstacleTimer >= 50){
+        if (addObstacleTimer >= 1400){
             score = score +1;
             addObstacleTimer = 0;
         }
@@ -91,7 +96,7 @@ public class GamePanl  extends JPanel implements KeyListener {
     //游戏结束
     public void gameOver() {
         finish = true;
-
+        //image = background.image_over;
         g2.drawImage(background.image_over,background.x_over,background.y_over,null);
         if (score > MainFrame.topScore){//判断最高分
             MainFrame.topScore =score;
@@ -125,11 +130,9 @@ public class GamePanl  extends JPanel implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
                   int code = e.getKeyCode();//获取 按键的编码
-               System.out.println("code:"+code);
-               System.out.println(":"+KeyEvent.VK_SPACE);
+
                  if(code == KeyEvent.VK_SPACE){
                      klong.jump();
-                     System.out.println("JumpState:"+klong.jumpState);
                  }
     }
 
