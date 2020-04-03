@@ -2,6 +2,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.util.Random;
 
 public class obstacle {
@@ -18,22 +19,24 @@ public class obstacle {
     public obstacle(){
         //读取图片
         try{
-            cactus01 = ImageIO.read(new File("image/cactus03.png"));
+            cactus01 = ImageIO.read(new File("image/cactus01.png"));
             cactus02 = ImageIO.read(new File("image/cactus02.png"));
-            cactus03 = ImageIO.read(new File("image/cactus01.png"));
-            bird1 = ImageIO.read(new File("image/bird1"));
-            bird2 = ImageIO.read(new File("image/bird2"));
+            cactus03 = ImageIO.read(new File("image/cactus03.png"));
+            bird1 = ImageIO.read(new File("image/bird1.png"));
+            bird2 = ImageIO.read(new File("image/bird2.png"));
 
 
 
-        }catch (Exception e){
+        }catch (IOException e){
             e.printStackTrace();
+
         }
         //初始位置
         x = 800;
         y = 209;
 
         //随机输出障碍物
+        System.out.println("随机数为："+temp);
         switch (temp){
             case 1:
                 image = cactus01;

@@ -1,4 +1,4 @@
-import com.sun.prism.Graphics;
+
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,16 +10,16 @@ import java.util.List;
 
 
 // 游戏面板
-
+@SuppressWarnings("all")
 public class GamePanl  extends JPanel implements KeyListener {
    //主图片
     BufferedImage image;
     //2D绘图工具
     Graphics2D g2;
-    KLong kLong;
+    KLong klong;
     boolean finish = false;
 
-    static final int FRESH = 10;
+    static final int FRESH = 50;
     BackgroundImage background;
 
     //障碍物集合
@@ -36,28 +36,29 @@ public class GamePanl  extends JPanel implements KeyListener {
     public GamePanl(){
         image = new BufferedImage(734,286,BufferedImage.TYPE_INT_BGR);
         g2 = image.createGraphics();
-        kLong = new KLong();
+        klong = new KLong();
         background = new BackgroundImage();
 
         list.add(new obstacle());
-/*        FreshThread t = new FreshThread(this);//刷新线程
+        FreshThread t = new FreshThread(this);//刷新线程
         t.start();
-        */
+
     }
 
     //绘制图片
-    private void painIamge(){
-        kLong.move();
+    private void painImage(){
+        klong.move();
         background.roll();
         g2.drawImage(background.image,0,0,this);
         g2.drawImage(background.image_yun,background.x_yun,background.y_yun,this);
-        g2.drawImage(kLong.image,kLong.x,kLong.y,this);
+        g2.drawImage(klong.image,klong.x,klong.y,this);
 
         if (addObstacleTimer >= 1400 ){
             list.add(new obstacle());
             addObstacleTimer = 0;
         }
-
+       // System.out.println(list);
+       // System.out.println("list大小："+ list.size());
         for (int i =0;i < list.size();i++){
             obstacle o = list.get(i);
             o.move();
@@ -65,9 +66,9 @@ public class GamePanl  extends JPanel implements KeyListener {
             g2.drawImage(o.image,o.x,o.y,this);//绘制障碍
 
             //判断障碍物是否和 头 、脚相撞
-            if (o.bounds().intersects(kLong.bound1()) || o.bounds().intersects(kLong.bound2())){
+            if (o.bounds().intersects(klong.bound1()) || o.bounds().intersects(klong.bound2())){
 
-                gameOver();
+                //gameOver();
             }
 
 
@@ -81,10 +82,10 @@ public class GamePanl  extends JPanel implements KeyListener {
         //分数显示代码 ---"%05d"  --- 指以五位数显示
         g2.drawString(String.format("%05d",score),600,35);
         g2.drawString("Hi",536,35);
-        g2.drawString(String.format("%05d","MainFrame.topScore"),550,35);
+        g2.drawString(String.format("%05d",MainFrame.topScore),550,35);
 
-        addObstacleTimer = addObstacleTimer +FRESH;
-        addScoreTimer = addScoreTimer + FRESH;
+        addObstacleTimer +=FRESH;
+        addScoreTimer    +=  FRESH;
 
     }
     //游戏结束
@@ -100,10 +101,16 @@ public class GamePanl  extends JPanel implements KeyListener {
 
     }
 
-    public void paint(Graphics2D g){
+  /*  public void paint(Graphics2D g){
         painIamge();
         g.drawImage(image,0,0,this);
 
+    }*/
+
+@Override
+    public void paint(Graphics g) {
+        painImage();
+        g.drawImage(image, 0, 0, this);
     }
 
     public boolean isFinish() {
@@ -117,7 +124,13 @@ public class GamePanl  extends JPanel implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-
+                  int code = e.getKeyCode();//获取 按键的编码
+               System.out.println("code:"+code);
+               System.out.println(":"+KeyEvent.VK_SPACE);
+                 if(code == KeyEvent.VK_SPACE){
+                     klong.jump();
+                     System.out.println("JumpState:"+klong.jumpState);
+                 }
     }
 
     @Override

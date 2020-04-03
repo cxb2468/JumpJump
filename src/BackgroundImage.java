@@ -21,7 +21,7 @@ public class BackgroundImage {
             image1 = ImageIO.read(new File("image/map.png"));
             image2 = ImageIO.read(new File("image/map1.png"));
             image_over = ImageIO.read(new File("image/over.png"));
-            image_yun  = ImageIO.read(new File("image/yun"));
+            image_yun  = ImageIO.read(new File("image/yun.png"));
 
         }catch (Exception e){
             e.printStackTrace();

@@ -11,8 +11,8 @@ public class KLong {
     BufferedImage image;
     BufferedImage image1,image2,image3,image_over;
     int stepTime = 0;
-    int fresh ;
-    //int fresh = GamePanl.FRESH;
+
+    int fresh = GamePanl.FRESH;
 
     boolean jumpState = false;
     int jumpHeight = 100;
@@ -39,29 +39,33 @@ public class KLong {
     //移动
     public void move(){
         step();
+        if(jumpState){
+            System.out.println("y:"+y);
         if ( y >= LOWEST_Y){
-            jumpValue = -4;
+            jumpValue = -40;
         }
         if ( y <= LOWEST_Y){
-            jumpValue = 4;
+            jumpValue = 40;
         }
         y = y +jumpValue;
         if (y >= LOWEST_Y){
             jumpState = false;
-        }
+        }}
 
 
 
     }
     //踏步
-    private void step() {
+public void step() {
         int tmp = stepTime / 100 % 2;
+        //System.out.println("s:"+stepTime);
+       //System.out.println("t:"+tmp);
         if (tmp == 1){
             image = image1;
         }else {
             image = image2;
         }
-        stepTime = stepTime +  fresh;
+        stepTime +=  fresh;
     }
 
     //跳跃
