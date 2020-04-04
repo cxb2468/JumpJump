@@ -33,8 +33,7 @@ public class obstacle {
             e.printStackTrace();
         }
         x = 800;
-        y = 200;
-
+        y = 209;
         //随机输出障碍物
         switch (temp) {
             case 1:

@@ -68,7 +68,7 @@ public class GamePanl  extends JPanel implements KeyListener {
 
             o.move();
             o.bridMove();
-            g2.drawImage(o.image,o.x,o.y,this);//绘制障碍s
+            g2.drawImage(o.image,o.x,o.y,this);//绘制障碍
 
             //判断障碍物是否和 头 、脚相撞
           if (o.bounds().intersects(klong.bounds1()) || o.bounds().intersects(klong.bounds2())){
@@ -79,9 +79,10 @@ public class GamePanl  extends JPanel implements KeyListener {
 
         }
         //分数++
-        if (addObstacleTimer >= 1400){
-            score = score +1;
-            addObstacleTimer = 0;
+        if (addObstacleTimer >= 50){
+            score += 1;
+
+            addScoreTimer = 0;
         }
 
         //分数显示代码 ---"%05d"  --- 指以五位数显示
@@ -89,7 +90,7 @@ public class GamePanl  extends JPanel implements KeyListener {
         g2.drawString("Hi",536,35);
         g2.drawString(String.format("%05d",MainFrame.topScore),550,35);
 
-        addObstacleTimer +=FRESH;
+        addObstacleTimer += FRESH;
         addScoreTimer    +=  FRESH;
 
     }

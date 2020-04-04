@@ -12,7 +12,7 @@ public class BackgroundImage {
 
      int x1,x2;
      int x_yun=800,y_yun=50;
-     int x_over=240,y_over=50;
+     int x_over=340,y_over=20;
 
      static final int SPEED = 3; //速度
 
