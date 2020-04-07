@@ -47,7 +47,7 @@ public class GamePanl  extends JPanel implements KeyListener {
     }
 
     //绘制图片
-    private void painImage(){
+    public void painImage(){
         klong.move();
         background.roll();
         g2.drawImage(background.image,0,0,this);
