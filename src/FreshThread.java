@@ -2,21 +2,23 @@
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Date;
 
 
 //线程类
 public class FreshThread extends Thread {
-    GamePanl p;
+ GamePanl p;
 
     public FreshThread(GamePanl p) {
         this.p = p;//给类成员属性赋值
     }
 
-    @Override
+   @Override
     public void run() {
 
         while (!p.isFinish()) {
             p.repaint();//重新绘制图片
+            System.out.println("Fresh子线程"+new Date().toString());
             try {
                 Thread.sleep(p.FRESH);//休眠刷新时间
             } catch (InterruptedException e) {

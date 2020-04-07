@@ -38,10 +38,8 @@ public class GamePanl  extends JPanel implements KeyListener {
         g2 = image.createGraphics();
         klong = new KLong();
         background = new BackgroundImage();
-
         list.add(new obstacle());
-        System.out.println("list大小"+list.size());
-
+        //System.out.println("list大小"+list.size());
 
         FreshThread t = new FreshThread(this);//刷新线程
         t.start();
@@ -62,7 +60,7 @@ public class GamePanl  extends JPanel implements KeyListener {
             addObstacleTimer = 0;
         }
        // System.out.println(list);
-        System.out.println("list最后大小："+ list.size());
+       // System.out.println("list最后大小："+ list.size());
         for (int i =0;i < list.size();i++){
             obstacle o = list.get(i);
 
@@ -91,7 +89,7 @@ public class GamePanl  extends JPanel implements KeyListener {
         g2.drawString(String.format("%05d",MainFrame.topScore),550,35);
 
         addObstacleTimer += FRESH;
-        addScoreTimer    +=  FRESH;
+        addScoreTimer    += FRESH;
 
     }
     //游戏结束
