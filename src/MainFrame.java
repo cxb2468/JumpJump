@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Date;
 
 public class MainFrame extends JFrame {
 
@@ -26,7 +27,7 @@ public class MainFrame extends JFrame {
         frame.setLocationRelativeTo(null);
 
         frame.setName("恐龙跳一跳");
-
+        System.out.println("main thread!"+ new Date().toString());
     }
 //重新开始 ，把死掉的东西删掉，重新来过
     public void restart() {

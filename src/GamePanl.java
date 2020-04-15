@@ -62,7 +62,7 @@ public class GamePanl  extends JPanel implements KeyListener {
             addObstacleTimer = 0;
         }
        // System.out.println(list);
-         //System.out.println("list最后大小："+ list.size());
+        System.out.println("list最后大小："+ list.size());
         for (int i =0;i < list.size();i++){
             obstacle o = list.get(i);
 
@@ -97,9 +97,9 @@ public class GamePanl  extends JPanel implements KeyListener {
     //游戏结束
     public void gameOver() {
         finish = true;
-       // image = background.image_over;
+        //image = background.image_over;
         g2.drawImage(background.image_over,background.x_over,background.y_over,null);
-         if (score > MainFrame.topScore){//判断最高分
+        if (score > MainFrame.topScore){//判断最高分
             MainFrame.topScore =score;
         }
 
@@ -107,6 +107,11 @@ public class GamePanl  extends JPanel implements KeyListener {
 
     }
 
+  /*  public void paint(Graphics2D g){
+        painIamge();
+        g.drawImage(image,0,0,this);
+
+    }*/
 
 @Override
     public void paint(Graphics g) {
