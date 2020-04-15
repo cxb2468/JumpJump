@@ -76,7 +76,7 @@ public void step() {
     //接触死亡区域
 
     public Rectangle bounds1(){
-        return new Rectangle(x+20,y,20,10);
+        return new Rectangle(x+20,y,20,12);
     }
 
     public Rectangle bounds2(){

@@ -48,7 +48,7 @@ public class MainFrame extends JFrame {
     }
 
 
-    public static int topScore;
+    public static int topScore = 0;
 
 
 }

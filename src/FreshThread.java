@@ -6,24 +6,24 @@ import java.awt.*;
 
 //线程类
 public class FreshThread extends Thread {
-    GamePanl p;
+    GamePanl gp;
 
-    public FreshThread(GamePanl p) {
-        this.p = p;//给类成员属性赋值
+    public FreshThread(GamePanl gp) {
+        this.gp = gp;//给类成员属性赋值
     }
 
     @Override
     public void run() {
 
-        while (!p.isFinish()) {
-            p.repaint();//重新绘制图片
+        while (!gp.isFinish()) {
+            gp.repaint();//重新绘制图片
             try {
-                Thread.sleep(p.FRESH);//休眠刷新时间
+                Thread.sleep(gp.FRESH);//休眠刷新时间
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        Container c=p.getParent();
+        Container c=gp.getParent();
         while(!(c instanceof  MainFrame)){
             c=c.getParent();
         }

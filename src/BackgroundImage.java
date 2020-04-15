@@ -12,7 +12,7 @@ public class BackgroundImage {
 
      int x1,x2;
      int x_yun=800,y_yun=50;
-     int x_over=340,y_over=20;
+     int x_over=240,y_over=50;
 
      static final int SPEED = 3; //速度
 
@@ -54,8 +54,8 @@ public class BackgroundImage {
         if (x_yun <= 0){
             g2.drawImage(image_yun,x_yun,y_yun,null);
             x_yun = 750;
-            if ((y_yun= y_yun +26) < 80 ){
-                y_yun = y_yun + 26;
+            if ((y_yun= y_yun +25) > 150 ){
+                y_yun =  50;
             }
         }
 
